@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-primary: #000000;
+    --background-secondary: #1615151d;
+    --gray-100: #ccc;
+    --gray-200: #1e1e1e;
+    --purple-500: #7009d1;
+}
+
+body{
+    color: var(--gray-100);
+    background-color: var(--background-primary);
+}
+
+header{
+    background-color: var(--background-primary);
+    border-bottom: 1px solid var(--gray-100);
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+
+    top: 0;
+    z-index: 99;
+    position: sticky;
+}
+
+header button{
+    color: var(--gray-100);
+    background-color: transparent;
+}
+
+header button i{
+    font-size: 32px;
+
+    /*
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid var(--purple-500);
+    background-color: var(--background-primary);
+    */
+}
+
+header .logo{
+    gap: 5px;
+    display: flex;
+}
+
+header .logo h2{
+    color: var(--purple-500);
+}
+header h2, h3{
+    font-size: 32px;
+}
+
+.btn-categoria{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 7px 10px;
+    border-radius: 50px;
+    border: 1px solid var(--purple-500);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.btn-categoria img{
+    width: 25px;
+    height: 25px;
+}
+
+.btn-categoria h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--gray-100);
+}
+.card-container{ /* onde vai conter todos itens */
+ padding: 20px;
+ justify-content: center;
+ gap: 20px;
+ display: flex;
+ 
+ flex-wrap: wrap;
+ 
+}
+.card-item{
+    
+}
+.card-image{
+    border-radius: 10px;
+    position: relative;
+    width: 180px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-200);
+}
+.card-image img{
+    width: 60%;
+}
+
+.card-image .badge{
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+    position: absolute;
+    font-size: 10px;
+    padding: 5px 7px;
+    border-radius: 20px;
+    background-color: var(--purple-500);
+}
+.card-description{
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.card-description h4{ 
+    margin-top: 8px;
+    font-size: 12px;
+    
+}
+.card-description .price-items{
+    padding-top: 3px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    
+ }
+ .card-description .price-items h3{
+    font-size: 18px;
+ }
+ .card-description .price-items h5{
+    color: #454242;
+ }
+.card-description .start-container{
+    font-size: 12px;
+ }
+ .bi-star-fill, .bi-star{
+    color: var(--purple-500);
+ }
